@@ -1,0 +1,22 @@
+body {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.directory-list {
+  margin-bottom: 32px;
+}
+
+/* Doge needs much Comic Sans for Doge */
+
+.h6 {
+  font-family: 'Comic Sans', 'Comic Sans MS', cursive;
+}
+
+.navbar-brand {
+  font-family: 'Comic Sans', 'Comic Sans MS', cursive;
+}
+
+legend {
+  font-family: 'Comic Sans', 'Comic Sans MS', cursive;
+}
