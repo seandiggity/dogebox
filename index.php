@@ -42,7 +42,7 @@
       <div class="page-header" id="banner">
         <div class="row">
           <div class="col-lg-12">
-            <img src="./theme/img/doge.png" class="img-responsive pull-left" alt="Responsive image" style=>
+            <img src="./theme/img/doge.png" class="img-responsive pull-left" alt="Doge">
             <h1>DogeBox</h1>
             <p class="lead">So basic. Such files. Very hypertext. Wow.</p>
             <hr class="soften">
@@ -76,7 +76,6 @@
                     <td><button type="button" class="btn btn-primary">Download >></button> Description of File Goes Here</td>
                     <td><button type="button" class="btn btn-primary">Download >></button> Description of File Goes Here</td>
                   </tr>
-                  <tr>
                   <tr>
                     <td><button type="button" class="btn btn-primary">Download >></button> Description of File Goes Here</td>
                     <td><button type="button" class="btn btn-primary">Download >></button> Description of File Goes Here</td>
@@ -120,7 +119,6 @@
                     <td><button type="button" class="btn btn-success">Download >></button> Description of File Goes Here</td>
                   </tr>
                   <tr>
-                  <tr>
                     <td><button type="button" class="btn btn-success">Download >></button> Description of File Goes Here</td>
                     <td><button type="button" class="btn btn-success">Download >></button> Description of File Goes Here</td>
                   </tr>
@@ -162,7 +160,6 @@
                     <td><button type="button" class="btn btn-danger">Download >></button> Description of File Goes Here</td>
                     <td><button type="button" class="btn btn-danger">Download >></button> Description of File Goes Here</td>
                   </tr>
-                  <tr>
                   <tr>
                     <td><button type="button" class="btn btn-danger">Download >></button> Description of File Goes Here</td>
                     <td><button type="button" class="btn btn-danger">Download >></button> Description of File Goes Here</td>
@@ -206,7 +203,6 @@
                     <td><button type="button" class="btn btn-info">Download >></button> Description of File Goes Here</td>
                   </tr>
                   <tr>
-                  <tr>
                     <td><button type="button" class="btn btn-info">Download >></button> Description of File Goes Here</td>
                     <td><button type="button" class="btn btn-info">Download >></button> Description of File Goes Here</td>
                   </tr>
@@ -248,7 +244,6 @@
                     <td><button type="button" class="btn btn-warning">Download >></button> Description of File Goes Here</td>
                     <td><button type="button" class="btn btn-warning">Download >></button> Description of File Goes Here</td>
                   </tr>
-                  <tr>
                   <tr>
                     <td><button type="button" class="btn btn-warning">Download >></button> Description of File Goes Here</td>
                     <td><button type="button" class="btn btn-warning">Download >></button> Description of File Goes Here</td>
