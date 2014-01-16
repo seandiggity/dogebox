@@ -35,7 +35,8 @@ $dir_timestamp = "F d, Y"; //format for timestamp in listings. See PHP date() ma
 $markdown = 1; //use MarkdownExtra formatting?
 $target_blank = 1; //force links in listings to open in a new window/tab?
 $render_img = 1; //render links to image files in as inline images
-$file_icon = $theme_dir."img/doge.png";
+$file_icon = $theme_dir."img/doge.png"; //renders next to filenames
+$favicon = $theme_dir."img/favicon.ico"; //for bookmarks
 
 // Bootswatch styles
 $style[0] = "primary"; //primary = red

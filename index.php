@@ -41,7 +41,7 @@ include_once("lib/filesize.php"); //convert filesizes to human-readable text
 
     <meta charset="utf-8">
 
-    <link rel="shortcut icon" href="<?= $theme_dir; ?>img/favicon.ico" />
+    <link rel="shortcut icon" href="<?= $favicon; ?>" />
 
     <!-- The is the icon for iOS's Web Clip. Size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4 -->
     <link rel="apple-touch-icon" sizes="57x57" href="<?= $theme_dir; ?>img/apple-touch-icon-57px-precomposed.png">
