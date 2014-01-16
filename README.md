@@ -14,6 +14,7 @@ Installation
 2. Edit config.php appropriately.  The only variables you must change are $root_url and $root_path
 3. Copy the folders you wish to share to the location specified in $read_dir, /files by default
 4. Optionally create a descriptive text file inside each directory, DOGE.md by default
+5. There are sample .htaccess, .htpasswd, and robots.txt files in the root.  Be wary of search engines and don't rely upon security by obscurity.
 
 Use Cases
 -----------
