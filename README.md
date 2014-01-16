@@ -13,7 +13,8 @@ Installation
 1. Copy DogeBox to a Web server with PHP 5+ running
 2. Edit config.php appropriately.  The only variables you must change are $root_url and $root_path
 3. Copy the folders you wish to share to the location specified in $read_dir, /files by default
-4. Optionally create a descriptive text file inside each directory, DOGE.md by default
+4. Optionally create a descriptive text file inside each directory, DOGE.md by default.  This README.md is Markdown.  [More Examples](http://en.wikipedia.org/wiki/Markdown#Example).
+
 5. There are sample .htaccess, .htpasswd, and robots.txt files in the root.  Be wary of search engines and don't rely upon security by obscurity.
 
 Use Cases
@@ -44,6 +45,10 @@ PHP 5+
 More Info
 -----------
 See JavaScript labels for LibreJS at [theme/doge/javascript.html](theme/javascript.html)
+
 More licensing info for the theme at [theme/doge/THEME.md](theme/THEME.md)
+
+Additional icons from FreedomBox are in [theme/freedom/](theme/freedom/THEME.md)
+
 Doge images by Doge. Yes, [this is Doge](https://en.wikipedia.org/wiki/Doge_%28meme%29)
 
