@@ -11,11 +11,12 @@ See an example at [https://getlibre.org/dogebox](https://getlibre.org/dogebox)
 Installation
 -----------
 1. Copy DogeBox to a Web server with PHP 5+ running
-2. Edit config.php appropriately.  The only variables you must change are $root_url and $root_path
+2. Edit config.php appropriately. The only variables you must change are $root_url and $root_path.  SSL is on by default; change $forceSSL if you want to turn it off.  [About SSL](http://en.wikipedia.org/wiki/Https).
+
 3. Copy the folders you wish to share to the location specified in $read_dir, /files by default
 4. Optionally create a descriptive text file inside each directory, DOGE.md by default.  This README.md is Markdown.  [More Examples](http://en.wikipedia.org/wiki/Markdown#Example).
 
-5. There are sample .htaccess, .htpasswd, and robots.txt files in the root.  Be wary of search engines and don't rely upon security by obscurity.
+5. There are sample .htaccess, .htpasswd, and robots.txt files in the root... it's wise to learn about these to maintain privacy.  Be wary of search engines and don't rely upon security by obscurity.  More Info: [.htaccess](http://en.wikipedia.org/wiki/.htaccess), [.htpasswd](http://en.wikipedia.org/wiki/.htpasswd), [robots.txt](http://en.wikipedia.org/wiki/Robots.txt)
 
 Use Cases
 -----------
