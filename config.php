@@ -6,8 +6,8 @@ $forceSSL = 1; //force SSL connection?
 $allow_robots = 0; //show to search engines?
 
 // Paths and URLs
-$root_url = "https://webio.me/"; //usually the Web server domain
-$root_path = "/home/webiome01/webio.me/"; //your root Web directory on the server filesystem
+$root_url = "https://yourdomain.com/"; //usually the Web server domain
+$root_path = "/var/www/"; //your root Web directory on the server filesystem
 $app_dir = "dogebox/"; //change this if you rename the default dogebox folder
 $read_dir = "files/"; //top-level directory to read. DogeBox lists the contents of subdirectories inside.
 $desc_file = "DOGE.md"; //README file in each directory, displayed by DogeBox as the description
