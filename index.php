@@ -2,17 +2,17 @@
 // Require configuration file
 require("config.php");
 
-if($debug_mode = 1) {
+if($debug_mode == 1) {
 	error_reporting(E_ALL & E_STRICT); //turn on all error reporting
 	ini_set('display_errors','On');
 }
 
-if($forceSSL = 1) {
+if($forceSSL == 1) {
 	require("lib/check_secure.php"); //detect if this is an SSL connection, switch to SSL if not
 }
 
 // Include PHP Markdown rendering libraries 
-if($markdown = 1) {
+if($markdown == 1) {
 	include_once("lib/php-markdown/markdown.php"); // MarkdownExtra classic version, http://michelf.ca/projects/php-markdown/classic/
 }
 
@@ -23,7 +23,7 @@ include_once("lib/filesize.php"); //convert filesizes to human-readable text
   <head>
     <title><?= $top_title; ?> <?= $top_desc; ?></title>
     <meta name="description" content="<?= $top_title; ?> <?= $top_desc; ?>">
-<?php if($allow_robots = 1) { ?>
+<?php if($allow_robots == 1) { ?>
     <meta name="robots" content="index, follow, snippet">
 <?php } else { ?>
     <meta name="robots" content="noindex, nofollow, nosnippet">
@@ -107,21 +107,21 @@ if ($handle = opendir($read_path)) {
 	<?php
 		$desc_text = file_get_contents($read_path.$file."/".$desc_file); //read directory description
 
-		if($markdown = 1) { 
+		if($markdown == 1) { 
 			$desc_html = Markdown($desc_text); //if Doge owner kept MarkdownExtra parsing turned on 
-			if($target_blank = 1) { //if Doge owner wants links opened in a new window/tab
+			if($target_blank == 1) { //if Doge owner wants links opened in a new window/tab
 				$desc_html = str_replace( '<a ', '<a target="_blank" ', $desc_html);
 			}
-			if($render_img = 1) { //if Doge owner wants images rendered inline
+			if($render_img == 1) { //if Doge owner wants images rendered inline
 				$desc_html = preg_replace('@(https?://([-\w\.]+[-\w])+(:\d+)?(/([\w/_\.#-]*(\?\S+)?[^\.\s])?)?\.(gif|png|jpe?g))@', '<img src="$1">', $desc_html);
 			}
 			echo $desc_html;
 		}
 		else {
-			if($target_blank = 1) {
+			if($target_blank == 1) {
 				$desc_text = str_replace( '<a ', '<a target="_blank" ', $desc_text);
 			}
-			if($render_img = 1) {
+			if($render_img == 1) {
 				$desc_text = preg_replace('@(https?://([-\w\.]+[-\w])+(:\d+)?(/([\w/_\.#-]*(\?\S+)?[^\.\s])?)?\.(gif|png|jpe?g))@', '<img src="$1">', $desc_text);
 			}
 			echo $desc_text;
@@ -146,7 +146,7 @@ if ($handle = opendir($read_path)) {
 			?>
 		<!-- Download links -->
             	<div class="well col-lg-3" style="margin-right:16px;">
-		<a style="font-size:1.5em;" href="<?= $read_url.$file.'/'.$subfile; ?>"<?php if($target_blank = 1) { echo 'target="_blank"'; } ?>><img src="<?= $file_icon; ?>" style="height:24px;border:0;margin-right:6px;" alt="<?= $subfile; ?>"><?= $subfile; ?></a> <a style="margin-top:6px;" class="btn btn-<?= $bsStyle; ?>" href="<?= $read_url.$file.'/'.$subfile; ?>"<?php if($target_blank = 1) { echo 'target="_blank"'; } ?>><!--<i class="icon-hand-down icon-large"></i>--> Download <span class="badge"><?= FileSizeConvert(filesize($read_path.$file.'/'.$subfile)); ?></span></a>
+		<a style="font-size:1.5em;" href="<?= $read_url.$file.'/'.$subfile; ?>"<?php if($target_blank == 1) { echo 'target="_blank"'; } ?>><img src="<?= $file_icon; ?>" style="height:24px;border:0;margin-right:6px;" alt="<?= $subfile; ?>"><?= $subfile; ?></a> <a style="margin-top:6px;" class="btn btn-<?= $bsStyle; ?>" href="<?= $read_url.$file.'/'.$subfile; ?>"<?php if($target_blank == 1) { echo 'target="_blank"'; } ?>><!--<i class="icon-hand-down icon-large"></i>--> Download <span class="badge"><?= FileSizeConvert(filesize($read_path.$file.'/'.$subfile)); ?></span></a>
 		</div>
 		<?php
 				}
@@ -209,7 +209,7 @@ if ($handle = opendir($read_path)) {
               <li><a href="<?= $theme_dir; ?>javascript.html" target="_blank">JavaScript info</a></li>
             </ul>
 
-<?php if($cust_footer = 1) { ?>
+<?php if($cust_footer == 1) { ?>
             <p><?= $cust_footer_txt; ?></p>
 <?php } ?>
           </div>
